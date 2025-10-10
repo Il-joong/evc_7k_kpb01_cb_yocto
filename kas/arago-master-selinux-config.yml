@@ -60,10 +60,6 @@ repos:
       meta-arm:
       meta-arm-toolchain:
 
-  meta-clang:
-    url: "https://github.com/kraj/meta-clang"
-    branch: "master"
-
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "master"
