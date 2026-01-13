@@ -70,6 +70,8 @@
 
     <local-conf>
         <line>OVERRIDES:append = ":recipe-${@os.path.basename(d.getVar('FILE'))}"</line>
+        <line>BRANCH:recipe-linux-ti-staging_6.18.bb = "ti-linux-6.18.y-cicd"</line>
+        <line>BRANCH:recipe-u-boot-ti-staging_2026.01.bb = "ti-u-boot-2026.01-next"</line>
     </local-conf>
 
     <tools>
