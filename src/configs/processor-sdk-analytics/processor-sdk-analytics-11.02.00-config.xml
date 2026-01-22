@@ -10,7 +10,7 @@
     <bitbake url='https://git.openembedded.org/bitbake' branch='2.8' commit='8dcf084522b9c66a6639b5f117f554fde9b6b45a'/>
 
     <repos>
-        <repo name='meta-arago' url='https://git.yoctoproject.org/meta-arago' branch='scarthgap' commit='b9c8be5cceb1b67c6d14a871fe20e599542999f1'>
+        <repo name='meta-arago' url='https://git.yoctoproject.org/meta-arago' branch='scarthgap' commit='1640df60b0f75722b9e5923a5bfba3767e7d97a8'>
             <layers>
                 <layer>meta-arago-distro</layer>
                 <layer>meta-arago-extras</layer>
@@ -31,7 +31,7 @@
         <repo name='meta-virtualization' url='https://git.yoctoproject.org/meta-virtualization' branch='scarthgap' commit='17ac21e7d7f6f40a87618b22278b63bcfa14dbf2'>
             <layers/>
         </repo>
-        <repo name='meta-openembedded' url='https://git.openembedded.org/meta-openembedded' branch='scarthgap' commit='89a01c3d9ad1f8fce6aeb4dd0e694cfa28d42099'>
+        <repo name='meta-openembedded' url='https://git.openembedded.org/meta-openembedded' branch='scarthgap' commit='e76bf51a92b41d4cb185fc164ae43a863910ccd1'>
             <layers>
                 <layer>meta-networking</layer>
                 <layer>meta-python</layer>
@@ -44,7 +44,7 @@
         <repo name='meta-lts-mixins' url='https://git.yoctoproject.org/meta-lts-mixins' branch='scarthgap/rust' commit='a8046d5ec53b1856169ac795aa87cb0d5db84c04'>
             <layers/>
         </repo>
-        <repo name='meta-ti' url='https://git.yoctoproject.org/meta-ti' branch='scarthgap' commit='802cd01e783aeec00af81d99cd242f20ede3adc9'>
+        <repo name='meta-ti' url='https://git.yoctoproject.org/meta-ti' branch='scarthgap' commit='ea8c0b1cf1ab8a0b327e3feb1144c1ccf05b8278'>
             <layers>
                 <layer>meta-ti-extras</layer>
                 <layer>meta-beagle</layer>
@@ -57,7 +57,7 @@
                 <layer>meta-arm-toolchain</layer>
             </layers>
         </repo>
-        <repo name='meta-clang' url='https://github.com/kraj/meta-clang' branch='scarthgap' commit='731488911f55ebfe746068512b426351192f82f2'>
+        <repo name='meta-clang' url='https://github.com/kraj/meta-clang' branch='scarthgap' commit='5c602337ea1a80fb7217eeda04e396cf90587dca'>
             <layers/>
         </repo>
         <repo name='meta-flutter' url='https://github.com/meta-flutter/meta-flutter.git' branch='scarthgap' commit='HEAD' disabled='true'>
@@ -66,17 +66,17 @@
                 <layer>meta-flutter-apps</layer>
             </layers>
         </repo>
-        <repo name='oe-core' url='https://git.openembedded.org/openembedded-core' branch='scarthgap' commit='1fbd9eddbdf0da062df0510cabff6f6ee33d5752'>
+        <repo name='oe-core' url='https://git.openembedded.org/openembedded-core' branch='scarthgap' commit='2b3d2b671a149cbeea2bdc9ba42192da2015c3b7'>
             <layers>
                 <layer>meta</layer>
             </layers>
         </repo>
-        <repo name='meta-tisdk' url='https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git' branch='scarthgap' commit='71e97d787810978a21dc536dfe59d0c821b554fd'>
+        <repo name='meta-tisdk' url='https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git' branch='scarthgap' commit='32482cad2f630892b733c1457b9e9d835b098174'>
             <layers>
                 <layer>meta-ti-foundational</layer>
             </layers>
         </repo>
-        <repo name='meta-edgeai' url='https://git.ti.com/git/edgeai/meta-edgeai.git' branch='scarthgap' commit='e814c23648afeb0efd277ae6a9fce9aba0aee025'>
+        <repo name='meta-edgeai' url='https://git.ti.com/git/edgeai/meta-edgeai.git' branch='scarthgap' commit='9754bc67d46fb43667ee720f46254d2c9f52183a'>
             <layers/>
         </repo>
     </repos>

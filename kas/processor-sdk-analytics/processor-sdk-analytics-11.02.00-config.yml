@@ -18,7 +18,7 @@ repos:
   meta-arago:
     url: "https://git.yoctoproject.org/meta-arago"
     branch: "scarthgap"
-    commit: "b9c8be5cceb1b67c6d14a871fe20e599542999f1"
+    commit: "1640df60b0f75722b9e5923a5bfba3767e7d97a8"
     layers:
       meta-arago-distro:
       meta-arago-extras:
@@ -37,7 +37,7 @@ repos:
   meta-openembedded:
     url: "https://git.openembedded.org/meta-openembedded"
     branch: "scarthgap"
-    commit: "89a01c3d9ad1f8fce6aeb4dd0e694cfa28d42099"
+    commit: "e76bf51a92b41d4cb185fc164ae43a863910ccd1"
     layers:
       meta-networking:
       meta-python:
@@ -54,7 +54,7 @@ repos:
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "scarthgap"
-    commit: "802cd01e783aeec00af81d99cd242f20ede3adc9"
+    commit: "ea8c0b1cf1ab8a0b327e3feb1144c1ccf05b8278"
     layers:
       meta-ti-extras:
       meta-beagle:
@@ -71,23 +71,23 @@ repos:
   meta-clang:
     url: "https://github.com/kraj/meta-clang"
     branch: "scarthgap"
-    commit: "731488911f55ebfe746068512b426351192f82f2"
+    commit: "5c602337ea1a80fb7217eeda04e396cf90587dca"
 
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "scarthgap"
-    commit: "1fbd9eddbdf0da062df0510cabff6f6ee33d5752"
+    commit: "2b3d2b671a149cbeea2bdc9ba42192da2015c3b7"
     layers:
       meta:
 
   meta-tisdk:
     url: "https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git"
     branch: "scarthgap"
-    commit: "71e97d787810978a21dc536dfe59d0c821b554fd"
+    commit: "32482cad2f630892b733c1457b9e9d835b098174"
     layers:
       meta-ti-foundational:
 
   meta-edgeai:
     url: "https://git.ti.com/git/edgeai/meta-edgeai.git"
     branch: "scarthgap"
-    commit: "e814c23648afeb0efd277ae6a9fce9aba0aee025"
+    commit: "9754bc67d46fb43667ee720f46254d2c9f52183a"
