@@ -15,7 +15,7 @@ meta-clang,https://github.com/kraj/meta-clang,scarthgap,5c602337ea1a80fb7217eeda
 #meta-flutter,https://github.com/meta-flutter/meta-flutter.git,scarthgap,HEAD,layers=.:meta-flutter-apps
 oe-core,https://git.openembedded.org/openembedded-core,scarthgap,2b3d2b671a149cbeea2bdc9ba42192da2015c3b7,layers=meta
 meta-tisdk,https://git.ti.com/git/ti-sdk-linux/meta-tisdk.git,scarthgap,32482cad2f630892b733c1457b9e9d835b098174,layers=meta-ti-foundational
-meta-edgeai,https://git.ti.com/git/edgeai/meta-edgeai.git,scarthgap,9754bc67d46fb43667ee720f46254d2c9f52183a,layers=
+meta-edgeai,https://git.ti.com/git/edgeai/meta-edgeai.git,scarthgap,7d07e25a15632494d6c30efb09d68de1c95f9394,layers=
 
 OECORELAYERCONF=./sample-files/bblayers.conf.sample
 OECORELOCALCONF=./sample-files/local-arago64-v2.conf.sample

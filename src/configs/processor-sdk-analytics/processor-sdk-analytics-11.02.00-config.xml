@@ -76,7 +76,7 @@
                 <layer>meta-ti-foundational</layer>
             </layers>
         </repo>
-        <repo name='meta-edgeai' url='https://git.ti.com/git/edgeai/meta-edgeai.git' branch='scarthgap' commit='9754bc67d46fb43667ee720f46254d2c9f52183a'>
+        <repo name='meta-edgeai' url='https://git.ti.com/git/edgeai/meta-edgeai.git' branch='scarthgap' commit='7d07e25a15632494d6c30efb09d68de1c95f9394'>
             <layers/>
         </repo>
     </repos>
