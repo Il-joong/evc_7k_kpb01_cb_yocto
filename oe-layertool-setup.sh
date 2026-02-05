@@ -658,7 +658,7 @@ get_oecorelayerconf() {
 
     done="n"
 
-    while [ "$done" != "y" ]
+    while [ "$done" != "y" ] && [ -n "$confs" ]
     do
 
 cat << EOM
@@ -713,7 +713,7 @@ get_oecorelocalconf() {
 
     done="n"
 
-    while [ "$done" != "y" ]
+    while [ "$done" != "y" ] && [ -n "$confs" ]
     do
 
 cat << EOM
@@ -765,7 +765,10 @@ NOTE: Any additional entries to this file will be lost if the $0
 
 EOM
     # First copy the template file
-    cp -f "$OECORELAYERCONFPATH" "$confdir/bblayers.conf"
+    if [ -n "$OECORELAYERCONFPATH" ]
+    then
+        cp -f "$OECORELAYERCONFPATH" "$confdir/bblayers.conf"
+    fi
 
     # Now add the layers we have configured to the BBLAYERS variable
 cat >> "$confdir/bblayers.conf" << EOM
@@ -806,7 +809,10 @@ EOM
     fi
 
     # First copy the template file
-    cp -f "$OECORELOCALCONFPATH" "$confdir/local.conf"
+    if [ -n "$OECORELOCALCONFPATH" ]
+    then
+        cp -f "$OECORELOCALCONFPATH" "$confdir/local.conf"
+    fi
 
     # If command line option was not set use the old dldir
     if [ -z "$dldir" ]
