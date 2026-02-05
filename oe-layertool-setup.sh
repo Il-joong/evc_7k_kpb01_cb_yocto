@@ -136,7 +136,7 @@ check_input() {
     if [ ! -f "$inputfile" ]
     then
         printf '%s\n' "ERROR: the file \"$inputfile\" given for inputfile does not exist"
-        usage 
+        usage
     fi
 
     # If directories do not exist then create them
@@ -348,7 +348,7 @@ configure_repo() {
         printf '%s\n' "Skipping configuring duplicate repository"
         return 1
     fi
-  
+
     if [ -z "$uri" ]
     then
         get_repo_uri
@@ -431,7 +431,7 @@ The $name repository has the following branches available:
 
 $branches
 
-What branch would you like to checkout for the $name repository? 
+What branch would you like to checkout for the $name repository?
 EOM
         read -r input
 
