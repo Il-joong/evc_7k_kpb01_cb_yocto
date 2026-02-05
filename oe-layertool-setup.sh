@@ -462,9 +462,9 @@ checkout_branch() {
     # else just checkout the existing branch
     if git branch | grep -q "$branch"
     then
-        git checkout "origin/$branch" -b "$branch" --track
-    else
         git checkout "$branch"
+    else
+        git checkout "origin/$branch" -b "$branch" --track
     fi
 
     # Now that we are on the proper branch pull the remote branch changes if
