@@ -416,10 +416,10 @@ get_repo_branch() {
 
         # Get a unique list of branches for the user to chose from
         # Also delete the origin/HEAD line that the -r option returns
-        t_branches=$(git branch -r | sed '/origin\/HEAD/d')
+        t_branches=$(git branch -r --format='%(refname:strip=3)' | grep -v '^HEAD$')
         for b in $t_branches
         do
-            branches="${branches}$(printf '%s\n' "$b" | sed 's:.*origin/::g')\n"
+            branches="${branches}$(printf '%s\n' "$b")\n"
         done
         branches=$(printf '%s\n' "$branches" | sort | uniq)
 
@@ -460,7 +460,7 @@ checkout_branch() {
     # Check if a local branch already exists to track the remote branch.
     # If not then create a tracking branch and checkout the branch
     # else just checkout the existing branch
-    if git branch | grep -q "$branch"
+    if git branch --format='%(refname:short)' | grep -q "^$branch\$"
     then
         git checkout "$branch"
     else
