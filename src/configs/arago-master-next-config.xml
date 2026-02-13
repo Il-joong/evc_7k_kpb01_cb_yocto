@@ -70,6 +70,7 @@
 
     <local-conf>
         <line>OVERRIDES:append = ":recipe-${@os.path.basename(d.getVar('FILE'))}"</line>
+        <line>BRANCH:recipe-ltp-ddt_20250930.bb = "cicd"</line>
         <line>BRANCH:recipe-cadence-mhdp-fw_git.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-cnm-wave-fw_git.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-goodix-fw_git.bb = "ti-linux-firmware-next"</line>
@@ -79,7 +80,7 @@
         <line>BRANCH:recipe-pruhsr-fw_2.17.25.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-pruprp-fw_2.17.25.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-prusw-fw_3.2.9.bb = "ti-linux-firmware-next"</line>
-        <line>BRANCH:recipe-ti-dac-fw.bb = "ti-linux-firmware-next"</line>
+        <line>BRANCH:recipe-ti-adc-fw.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-ti-dm-fw.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-ti-eth-fw.bb = "ti-linux-firmware-next"</line>
         <line>BRANCH:recipe-ti-hsm-demo-fw_git.bb = "ti-linux-firmware-next"</line>
