@@ -79,6 +79,17 @@
       },
       "path": "meta-ti"
     },
+    "meta-evc_7k_kpb01_cb": {
+      "git-remote": {
+        "remotes": {
+          "origin": {
+            "uri": "https://github.com/Il-joong/meta-evc_7k_kpb01_cb"
+          }
+        },
+        "rev": "main"
+      },
+      "path": "meta-evc_7k_kpb01_cb"
+    },
     "meta-arm": {
       "git-remote": {
         "remotes": {
