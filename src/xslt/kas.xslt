@@ -37,6 +37,8 @@ target: </xsl:text><xsl:value-of select='text()'/><xsl:text>
 <xsl:text>    commit: "</xsl:text><xsl:value-of select='@commit'/><xsl:text>"
 </xsl:text>
 </xsl:if>
+<xsl:text>    path: "sources/bitbake"
+</xsl:text>
 <xsl:text>    layers:
 </xsl:text>
 <xsl:text>      .: disabled
@@ -56,6 +58,8 @@ target: </xsl:text><xsl:value-of select='text()'/><xsl:text>
 <xsl:text>    commit: "</xsl:text><xsl:value-of select='@commit'/><xsl:text>"
 </xsl:text>
 </xsl:if>
+<xsl:text>    path: "sources/</xsl:text><xsl:value-of select='@name'/><xsl:text>"
+</xsl:text>
 <xsl:apply-templates select='layers'/>
 </xsl:template>
 
