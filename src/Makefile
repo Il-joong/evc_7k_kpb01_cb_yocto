@@ -90,9 +90,7 @@ define xslt_kas_templates =
 endef
 
 ../kas/%.yml: xslt/kas.xslt configs/%.xml
-	@loTemplatePrefix1=`realpath --relative-to configs/$*.xml .`; \
-	loTemplatePrefix2=`dirname $${loTemplatePrefix1}`; \
-	loTemplatePrefix=`dirname $${loTemplatePrefix2}`; \
+	@loTemplatePrefix="kas"; \
 	$(xslt_kas)
 
 ../kas/templates/%.yml: xslt/kas-templates.xslt templates/%.xml
