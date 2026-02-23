@@ -2,19 +2,21 @@
 header:
   version: 17
   includes:
-    - ./templates/bblayers.conf.yml
-    - ./templates/local-v2.conf.yml
+    - kas/templates/bblayers.conf.yml
+    - kas/templates/local-v2.conf.yml
 
 repos:
   bitbake:
     url: "https://git.openembedded.org/bitbake"
     branch: "2.8"
+    path: "sources/bitbake"
     layers:
       .: disabled
 
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "scarthgap"
+    path: "sources/meta-ti"
     layers:
       meta-ti-extras:
       meta-ti-bsp:
@@ -22,6 +24,7 @@ repos:
   meta-arm:
     url: "https://git.yoctoproject.org/meta-arm"
     branch: "scarthgap"
+    path: "sources/meta-arm"
     layers:
       meta-arm:
       meta-arm-toolchain:
@@ -29,5 +32,6 @@ repos:
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "scarthgap"
+    path: "sources/oe-core"
     layers:
       meta:

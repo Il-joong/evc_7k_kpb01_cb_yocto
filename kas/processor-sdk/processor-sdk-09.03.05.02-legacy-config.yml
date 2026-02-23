@@ -2,8 +2,8 @@
 header:
   version: 17
   includes:
-    - ../templates/bblayers.conf.yml
-    - ../templates/local-arago64-v2.conf.yml
+    - kas/templates/bblayers.conf.yml
+    - kas/templates/local-arago64-v2.conf.yml
 
 target: tisdk-default-image
 
@@ -12,6 +12,7 @@ repos:
     url: "https://git.openembedded.org/bitbake"
     branch: "2.0"
     commit: "3f88b005244a0afb5d5c7260e54a94a453ec9b3e"
+    path: "sources/bitbake"
     layers:
       .: disabled
 
@@ -19,11 +20,13 @@ repos:
     url: "https://github.com/TexasInstruments/meta-tisdk.git"
     branch: "kirkstone"
     commit: "09.03.05.02"
+    path: "sources/meta-tisdk"
 
   meta-arago:
     url: "https://git.yoctoproject.org/meta-arago"
     branch: "kirkstone"
     commit: "09.03.05"
+    path: "sources/meta-arago"
     layers:
       meta-arago-distro:
       meta-arago-extras:
@@ -34,16 +37,19 @@ repos:
     url: "https://github.com/meta-qt5/meta-qt5.git"
     branch: "kirkstone"
     commit: "644ebf220245bdc06e7696ccc90acc97a0dd2566"
+    path: "sources/meta-qt5"
 
   meta-virtualization:
     url: "https://git.yoctoproject.org/meta-virtualization"
     branch: "kirkstone"
     commit: "460ea78d7f8d5d16799d0b7334b95d8170c9e338"
+    path: "sources/meta-virtualization"
 
   meta-openembedded:
     url: "https://git.openembedded.org/meta-openembedded"
     branch: "kirkstone"
     commit: "4ad41baed6236d499804cbfc4f174042d84fce97"
+    path: "sources/meta-openembedded"
     layers:
       meta-networking:
       meta-python:
@@ -56,6 +62,7 @@ repos:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "kirkstone"
     commit: "09.03.05"
+    path: "sources/meta-ti"
     layers:
       meta-ti-extras:
       meta-ti-bsp:
@@ -64,6 +71,7 @@ repos:
     url: "https://git.yoctoproject.org/meta-arm"
     branch: "kirkstone"
     commit: "936c02ec13661bd86a05f7f90e1b920d5092d670"
+    path: "sources/meta-arm"
     layers:
       meta-arm:
       meta-arm-toolchain:
@@ -72,5 +80,6 @@ repos:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "kirkstone"
     commit: "e42b6a40a3a01e328966bb5ee1bb3e0993975b15"
+    path: "sources/oe-core"
     layers:
       meta:

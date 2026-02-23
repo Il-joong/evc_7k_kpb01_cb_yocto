@@ -2,8 +2,8 @@
 header:
   version: 17
   includes:
-    - ./templates/bblayers.conf.yml
-    - ./templates/local-arago64-v3.conf.yml
+    - kas/templates/bblayers.conf.yml
+    - kas/templates/local-arago64-v3.conf.yml
 
 target: tisdk-default-image
 
@@ -11,12 +11,14 @@ repos:
   bitbake:
     url: "https://git.openembedded.org/bitbake"
     branch: "master"
+    path: "sources/bitbake"
     layers:
       .: disabled
 
   meta-arago:
     url: "https://git.yoctoproject.org/meta-arago"
     branch: "master-wip"
+    path: "sources/meta-arago"
     layers:
       meta-arago-distro:
       meta-arago-extras:
@@ -25,14 +27,17 @@ repos:
   meta-qt6:
     url: "https://code.qt.io/yocto/meta-qt6.git"
     branch: "dev"
+    path: "sources/meta-qt6"
 
   meta-virtualization:
     url: "https://git.yoctoproject.org/meta-virtualization"
     branch: "master"
+    path: "sources/meta-virtualization"
 
   meta-openembedded:
     url: "https://git.openembedded.org/meta-openembedded"
     branch: "master"
+    path: "sources/meta-openembedded"
     layers:
       meta-networking:
       meta-python:
@@ -44,6 +49,7 @@ repos:
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "master-wip"
+    path: "sources/meta-ti"
     layers:
       meta-ti-extras:
       meta-beagle:
@@ -52,6 +58,7 @@ repos:
   meta-arm:
     url: "https://git.yoctoproject.org/meta-arm"
     branch: "master"
+    path: "sources/meta-arm"
     layers:
       meta-arm:
       meta-arm-toolchain:
@@ -59,5 +66,6 @@ repos:
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "master"
+    path: "sources/oe-core"
     layers:
       meta:

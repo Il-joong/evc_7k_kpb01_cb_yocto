@@ -2,8 +2,8 @@
 header:
   version: 17
   includes:
-    - ./templates/bblayers.conf.yml
-    - ./templates/local-arago64-v2.conf.yml
+    - kas/templates/bblayers.conf.yml
+    - kas/templates/local-arago64-v2.conf.yml
 
 target: tisdk-default-image
 
@@ -11,12 +11,14 @@ repos:
   bitbake:
     url: "https://git.openembedded.org/bitbake"
     branch: "2.0"
+    path: "sources/bitbake"
     layers:
       .: disabled
 
   meta-arago:
     url: "https://git.yoctoproject.org/meta-arago"
     branch: "kirkstone-wip"
+    path: "sources/meta-arago"
     layers:
       meta-arago-distro:
       meta-arago-extras:
@@ -26,14 +28,17 @@ repos:
   meta-qt5:
     url: "https://github.com/meta-qt5/meta-qt5.git"
     branch: "kirkstone"
+    path: "sources/meta-qt5"
 
   meta-virtualization:
     url: "https://git.yoctoproject.org/meta-virtualization"
     branch: "kirkstone"
+    path: "sources/meta-virtualization"
 
   meta-openembedded:
     url: "https://git.openembedded.org/meta-openembedded"
     branch: "kirkstone"
+    path: "sources/meta-openembedded"
     layers:
       meta-networking:
       meta-python:
@@ -44,6 +49,7 @@ repos:
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "kirkstone-wip"
+    path: "sources/meta-ti"
     layers:
       meta-ti-extras:
       meta-ti-bsp:
@@ -51,6 +57,7 @@ repos:
   meta-arm:
     url: "https://git.yoctoproject.org/meta-arm"
     branch: "kirkstone"
+    path: "sources/meta-arm"
     layers:
       meta-arm:
       meta-arm-toolchain:
@@ -58,9 +65,11 @@ repos:
   meta-clang:
     url: "https://github.com/kraj/meta-clang"
     branch: "kirkstone-clang12"
+    path: "sources/meta-clang"
 
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "kirkstone"
+    path: "sources/oe-core"
     layers:
       meta:

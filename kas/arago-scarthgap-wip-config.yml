@@ -2,8 +2,8 @@
 header:
   version: 17
   includes:
-    - ./templates/bblayers.conf.yml
-    - ./templates/local-arago64-v2.conf.yml
+    - kas/templates/bblayers.conf.yml
+    - kas/templates/local-arago64-v2.conf.yml
 
 target: tisdk-default-image
 
@@ -11,12 +11,14 @@ repos:
   bitbake:
     url: "https://git.openembedded.org/bitbake"
     branch: "2.8"
+    path: "sources/bitbake"
     layers:
       .: disabled
 
   meta-arago:
     url: "https://git.yoctoproject.org/meta-arago"
     branch: "scarthgap-wip"
+    path: "sources/meta-arago"
     layers:
       meta-arago-distro:
       meta-arago-extras:
@@ -25,14 +27,17 @@ repos:
   meta-qt6:
     url: "https://code.qt.io/yocto/meta-qt6.git"
     branch: "6.9"
+    path: "sources/meta-qt6"
 
   meta-virtualization:
     url: "https://git.yoctoproject.org/meta-virtualization"
     branch: "scarthgap"
+    path: "sources/meta-virtualization"
 
   meta-openembedded:
     url: "https://git.openembedded.org/meta-openembedded"
     branch: "scarthgap"
+    path: "sources/meta-openembedded"
     layers:
       meta-networking:
       meta-python:
@@ -45,10 +50,12 @@ repos:
     url: "https://git.yoctoproject.org/meta-lts-mixins"
     branch: "scarthgap/rust"
     commit: "a8046d5ec53b1856169ac795aa87cb0d5db84c04"
+    path: "sources/meta-lts-mixins"
 
   meta-ti:
     url: "https://git.yoctoproject.org/meta-ti"
     branch: "scarthgap-wip"
+    path: "sources/meta-ti"
     layers:
       meta-ti-extras:
       meta-beagle:
@@ -57,6 +64,7 @@ repos:
   meta-arm:
     url: "https://git.yoctoproject.org/meta-arm"
     branch: "scarthgap"
+    path: "sources/meta-arm"
     layers:
       meta-arm:
       meta-arm-toolchain:
@@ -64,9 +72,11 @@ repos:
   meta-clang:
     url: "https://github.com/kraj/meta-clang"
     branch: "scarthgap"
+    path: "sources/meta-clang"
 
   oe-core:
     url: "https://git.openembedded.org/openembedded-core"
     branch: "scarthgap"
+    path: "sources/oe-core"
     layers:
       meta:
