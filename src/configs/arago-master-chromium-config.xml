@@ -23,7 +23,7 @@
                 <layer>meta-flutter-apps</layer>
             </layers>
         </repo>
-        <repo name='meta-browser' url='https://github.com/OSSystems/meta-browser.git' branch='master' commit='HEAD'>
+        <repo name='meta-browser' url='https://github.com/OSSystems/meta-browser.git' branch='master' commit='5f14862f261623d48f412af0be94a6721ade3930'>
             <layers>
                 <layer>meta-chromium</layer>
             </layers>
