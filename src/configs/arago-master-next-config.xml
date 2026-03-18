@@ -55,7 +55,7 @@
                 <layer>meta-ti-bsp</layer>
             </layers>
         </repo>
-        <repo name='meta-arm' url='https://git.yoctoproject.org/meta-arm' branch='master' commit='HEAD'>
+        <repo name='meta-arm' url='https://git.yoctoproject.org/meta-arm' branch='master' commit='f4118f9b86742faa9fb649e58da3e00e45375645'>
             <layers>
                 <layer>meta-arm</layer>
                 <layer>meta-arm-toolchain</layer>
