@@ -59,7 +59,6 @@ repos:
   meta-arm:
     url: "https://git.yoctoproject.org/meta-arm"
     branch: "master"
-    commit: "f4118f9b86742faa9fb649e58da3e00e45375645"
     path: "sources/meta-arm"
     layers:
       meta-arm:
