@@ -32,7 +32,6 @@ repos:
   meta-virtualization:
     url: "https://git.yoctoproject.org/meta-virtualization"
     branch: "master"
-    commit: "f505ae07df8d8350b715fe20bdacfe3bcf1bf8c6"
     path: "sources/meta-virtualization"
 
   meta-openembedded:
