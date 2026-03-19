@@ -61,7 +61,7 @@
                 <layer>meta-arm-toolchain</layer>
             </layers>
         </repo>
-        <repo name='oe-core' url='https://git.openembedded.org/openembedded-core' branch='master' commit='2dc4d2f8b5c7a6e87291385fb860436593767199'>
+        <repo name='oe-core' url='https://git.openembedded.org/openembedded-core' branch='master' commit='HEAD'>
             <layers>
                 <layer>meta</layer>
             </layers>
