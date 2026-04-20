@@ -4,3 +4,7 @@
 /bitbake.lock
 /pseudodone
 *.dot
+
+bitbake-cookerdaemon.log
+pyshtables.py
+
