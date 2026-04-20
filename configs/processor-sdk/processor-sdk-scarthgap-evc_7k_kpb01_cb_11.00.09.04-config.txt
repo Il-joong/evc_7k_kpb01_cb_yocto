@@ -11,7 +11,7 @@ meta-ti,https://git.yoctoproject.org/meta-ti,scarthgap,11.00.09,layers=meta-ti-e
 meta-arm,https://git.yoctoproject.org/meta-arm,scarthgap,3cadb81ffaa9f03b92e302843cb22a9cd41df34b,layers=meta-arm:meta-arm-toolchain
 meta-clang,https://github.com/kraj/meta-clang,scarthgap,b9ef02282197380ef05edbd0eb852e1934ceb59b,layers=
 oe-core,https://git.openembedded.org/openembedded-core,scarthgap,1be6d83466e3a0da4222ba502c2a86c25c835a35,layers=meta
-meta-evc_7k_kpb01_cb,ssh://git@github.com/Il-joong/meta-evc_7k_kpb01_cb.git,develop,b3b962fe952f8f883dbac88703d3ebf23c18a6f0,layers=meta-evc_7k_kpb01_cb
+meta-evc_7k_kpb01_cb,ssh://git@github.com/Il-joong/meta-evc_7k_kpb01_cb.git,develop,b3b962fe952f8f883dbac88703d3ebf23c18a6f0,layers=
 
 OECORELAYERCONF=./sample-files/bblayers.conf.sample
 OECORELOCALCONF=./sample-files/local-arago64-v2.conf.sample
