@@ -84,3 +84,25 @@ From there you run the same steps as if you had added the XML config yourself:
 - make
 - git status
 
+oe layer setup method
+
+./oe-layertool-setup.sh -f configs/process-sdk/<oe-config-file>
+# example  <oe-config-file> processor-sdk-scarthgap-11.00.09.04-config.txt
+# example  <oe-config-file> processor-sdk-scarthgap-evc_7k_kpb01_cb_11.00.09.04-config.txt
+
+build method
+cd build
+. conf/setenv
+MACHINE=<machine> bitbake -k <target>
+# example <machine> am62xx-evm
+# example <machine> am62xx-evc_7k_kpb01_cb
+# example <target> tisdk-default-image
+# MACHINE=am62xx-evm bitbake -k tisdk-default-image
+# MACHINE=am62xx-evm bitbake -k tisdk-default-image
+
+Config method for Parallelism Option 
+
+Modify BB_NUMBER_THREADS and BB_NUMBER_THREADS in build/conf/local.conf
+
+# example BB_NUMBER_THREADS ?= "2"
+# example PARALLEL_MAKE ?= "-j 2"
